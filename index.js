@@ -125,7 +125,7 @@ client.on('interactionCreate', async interaction => {
         }
 
         const embed = new EmbedBuilder()
-            .setTitle('💜 Ballas Ticket Sistemi')
+            .setTitle('💚 Grove GanG Ticket Sistemi')
             .setDescription(
                 '💡 Aşağıdaki seçeneklerden uygun olanı seçip ticket konunuzu belirtebilir ve ticket açabilirsiniz.\n\n' +
                 '⚡ Ticket açmadan önce kuralları okumayı ihmal etmeyin.'
@@ -479,7 +479,7 @@ client.on('interactionCreate', async interaction => {
                     `Merhaba ${member}, talebiniz alındı. Yetkili ekibimiz en kısa sürede ilgilenecektir.\n\n` +
                     `Aşağıdaki butonları kullanarak talebinizi yönetebilirsiniz.`
                 )
-                .setColor(0x580099);
+                .setColor(0x2ECC71);
 
 
             const actionRow = new ActionRowBuilder()
