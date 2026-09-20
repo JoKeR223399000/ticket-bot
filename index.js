@@ -131,11 +131,11 @@ client.on('interactionCreate', async interaction => {
                 '⚡ Ticket açmadan önce kuralları okumayı ihmal etmeyin.'
             )
             .setImage(
-                'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1000&auto=format&fit=crop'
+                'https://media.discordapp.net/attachments/1492485975862153277/1544464870710321234/oc_ithan.png?ex=6ab0fe3f&is=6aafacbf&hm=844931737dae096f2ea1d3650bfcbc6d6aff5d7d3642bc9b0d05868efdc04c2f&=&format=webp&quality=lossless&width=1024&height=1024'
             )
-            .setColor(0x580099)
+            .setColor(0x00A63C)
             .setFooter({
-                text: 'Ballas • #PRIMYOK daha neresi olsun'
+                text: 'Grove • #PRIMYOK '
             });
 
         const row = new ActionRowBuilder()
