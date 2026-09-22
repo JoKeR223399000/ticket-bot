@@ -459,7 +459,23 @@ client.on('interactionCreate', async interaction => {
                 });
 
             }
+            
+            // ==================================================
+            // SIKAYET_SORUMLU_ROLE VARSA EKLE
+            // ==================================================
 
+            if (sikayetSorumluRolId) {
+
+                permissionOverwrites.push({
+                    id: sikayetSorumluRolId,
+                    allow: [
+                        PermissionsBitField.Flags.ViewChannel,
+                        PermissionsBitField.Flags.SendMessages,
+                        PermissionsBitField.Flags.ReadMessageHistory
+                    ]
+                });
+
+            }
 
             const ticketChannel = await guild.channels.create({
 
