@@ -517,6 +517,10 @@ client.on('interactionCreate', async interaction => {
                 ? `<@&${process.env.TICKET_ROLE2}>`
                 : '';
 
+            const role3 = process.env.TICKET_ROLE3
+                ? `<@&${process.env.TICKET_ROLE3}>`
+                : ''
+
             const pingText =
                 `${member} ${role1} ${role2}`.trim();
 
