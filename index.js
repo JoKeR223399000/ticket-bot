@@ -156,6 +156,12 @@ client.on('interactionCreate', async interaction => {
                             value: 'mazeret',
                             emoji: '📋'
                         },
+                                  {
+                            label: 'Diğer',
+                            description: 'Diğer bildirimler ve izin talepleri',
+                            value: 'Diğer',
+                            emoji: '⟳'
+                        },
                         {
                             label: 'Seçimi Sıfırla',
                             description: 'Menü seçimini sıfırlar',
@@ -171,7 +177,7 @@ client.on('interactionCreate', async interaction => {
         });
 
         await interaction.reply({
-            content: `Ballas destek paneli başarıyla <#${targetChannelId}> kanalına gönderildi!`,
+            content: `Grove StreeT destek paneli başarıyla <#${targetChannelId}> kanalına gönderildi!`,
             ephemeral: true
         });
     }
@@ -186,6 +192,7 @@ client.on('interactionCreate', async interaction => {
         (
             channel.name.startsWith('şikayet-') ||
             channel.name.startsWith('mazeret-')
+            channel.name.startsWith('Diğer-')
         );
 
 
@@ -474,7 +481,7 @@ client.on('interactionCreate', async interaction => {
             // ==================================================
 
             const ticketEmbed = new EmbedBuilder()
-                .setTitle(`Ballas Destek Talebi - ${categoryName}`)
+                .setTitle(`Grove StreeT Destek Talebi - ${categoryName}`)
                 .setDescription(
                     `Merhaba ${member}, talebiniz alındı. Yetkili ekibimiz en kısa sürede ilgilenecektir.\n\n` +
                     `Aşağıdaki butonları kullanarak talebinizi yönetebilirsiniz.`
