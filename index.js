@@ -522,7 +522,7 @@ client.on('interactionCreate', async interaction => {
                 : ''
 
             const pingText =
-                `${member} ${role1} ${role2}`.trim();
+               `${member} ${role1} ${role2} ${role3}`.trim();
 
 
             await ticketChannel.send({
