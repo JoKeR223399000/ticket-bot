@@ -160,13 +160,13 @@ client.on('interactionCreate', async interaction => {
                             label: 'Diğer',
                             description: 'Diğer bildirimler ve izin talepleri',
                             value: 'Diğer',
-                            emoji: '⟳'
+                            emoji: '📦'
                         },
                         {
                             label: 'Seçimi Sıfırla',
                             description: 'Menü seçimini sıfırlar',
                             value: 'reset_selection',
-                            emoji: '🗑️'
+                            emoji: '🔄'
                         }
                     ])
             );
