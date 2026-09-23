@@ -14,7 +14,6 @@ const {
 } = require('discord.js');
 
 require('dotenv').config();
-const sikayetSorumluRolId = process.env.SIKAYET_ROLE_ID;
 
 const client = new Client({
     intents: [
@@ -161,13 +160,13 @@ client.on('interactionCreate', async interaction => {
                             label: 'Diğer',
                             description: 'Diğer bildirimler ve izin talepleri',
                             value: 'Diğer',
-                            emoji: '📦'
+                            emoji: '⟳'
                         },
                         {
                             label: 'Seçimi Sıfırla',
                             description: 'Menü seçimini sıfırlar',
                             value: 'reset_selection',
-                            emoji: '🔄'
+                            emoji: '🗑️'
                         }
                     ])
             );
@@ -192,7 +191,7 @@ client.on('interactionCreate', async interaction => {
         channel.name &&
         (
             channel.name.startsWith('şikayet-') ||
-            channel.name.startsWith('mazeret-') ||
+            channel.name.startsWith('mazeret-')
             channel.name.startsWith('Diğer-')
         );
 
@@ -460,23 +459,7 @@ client.on('interactionCreate', async interaction => {
                 });
 
             }
-            
-            // ==================================================
-            // SIKAYET_SORUMLU_ROLE VARSA EKLE
-            // ==================================================
 
-            if (sikayetSorumluRoleId) {
-
-                permissionOverwrites.push({
-                    id: sikayetSorumluRolId,
-                    allow: [
-                        PermissionsBitField.Flags.ViewChannel,
-                        PermissionsBitField.Flags.SendMessages,
-                        PermissionsBitField.Flags.ReadMessageHistory
-                    ]
-                });
-
-            }
 
             const ticketChannel = await guild.channels.create({
 
