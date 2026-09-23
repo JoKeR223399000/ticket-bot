@@ -248,6 +248,7 @@ client.on('interactionCreate', async interaction => {
             content: `${targetUser} kullanıcısının bu destek talebine olan erişimi kaldırıldı.`
         });
     }
+});
 
 // ======================================================
 // TİCKET MENÜ VE BUTON İŞLEMLERİ
