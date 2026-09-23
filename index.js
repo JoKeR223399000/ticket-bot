@@ -464,7 +464,7 @@ client.on('interactionCreate', async interaction => {
             // SIKAYET_SORUMLU_ROLE VARSA EKLE
             // ==================================================
 
-            if (sikayetSorumluRolId) {
+            if (sikayetSorumluRoleId) {
 
                 permissionOverwrites.push({
                     id: sikayetSorumluRolId,
