@@ -179,7 +179,7 @@ client.on('interactionCreate', async interaction => {
         channel.name &&
         (
             channel.name.startsWith('şikayet-') ||
-            channel.name.startsWith('mazeret-')
+            channel.name.startsWith('mazeret-') ||
             channel.name.startsWith('Diğer-')
         );
 
