@@ -14,6 +14,7 @@ const {
 } = require('discord.js');
 
 require('dotenv').config();
+const sikayetSorumluRoleId = process.env.SIKAYET_ROLE_ID;
 
 const client = new Client({
     intents: [
